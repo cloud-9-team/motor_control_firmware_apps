@@ -1,0 +1,1 @@
+Esta carpeta contiene el software de la aplicación de la placa EDU-CIAA.

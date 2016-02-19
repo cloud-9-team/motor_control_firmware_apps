@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>MotorControl: Encoder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MotorControl
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___encoder.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#typedef-members">'typedefs'</a> &#124;
+<a href="#enum-members">Enumeraciones</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Encoder<div class="ingroups"><a class="el" href="group___motor_control.html">Motor Control</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Administra las entradas conectadas a los encoders y captura sus datos.  
+<a href="#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:ga563e5cb4bd6740d1a109372596d9e240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga563e5cb4bd6740d1a109372596d9e240"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#ga563e5cb4bd6740d1a109372596d9e240">ENCODER_COUNT</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="memdesc:ga563e5cb4bd6740d1a109372596d9e240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cantidad de encoders conectados. <br /></td></tr>
+<tr class="separator:ga563e5cb4bd6740d1a109372596d9e240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+'typedefs'</h2></td></tr>
+<tr class="memitem:gadba1cd5a2bb4385b66ffc75936a14c7b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#gadba1cd5a2bb4385b66ffc75936a14c7b">callBackTimeElapsedFunction_type</a>) (void)</td></tr>
+<tr class="memdesc:gadba1cd5a2bb4385b66ffc75936a14c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tipo de función llamada por el módulo para notificar que transcurrió un período de conteo.  <a href="#gadba1cd5a2bb4385b66ffc75936a14c7b">Más...</a><br /></td></tr>
+<tr class="separator:gadba1cd5a2bb4385b66ffc75936a14c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:gae69ae616a32e1cd9040b4352defdc845"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae69ae616a32e1cd9040b4352defdc845"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#gae69ae616a32e1cd9040b4352defdc845">SpeedType</a> { <b>SPEED_TYPE_RPM</b> = 0, 
+<b>SPEED_TYPE_INTERRUPTS</b> = 1
+ }<tr class="memdesc:gae69ae616a32e1cd9040b4352defdc845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unidades para los datos que podría utilizar este módulo. Actualmente, sólo se usa SPEED_TYPE_INTERRUPTS. <br /></td></tr>
+</td></tr>
+<tr class="separator:gae69ae616a32e1cd9040b4352defdc845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:gab885d9bad57d89e5f53eb590dc3d6011"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#gab885d9bad57d89e5f53eb590dc3d6011">encoder_init</a> (void)</td></tr>
+<tr class="memdesc:gab885d9bad57d89e5f53eb590dc3d6011"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuración inicial del módulo.  <a href="#gab885d9bad57d89e5f53eb590dc3d6011">Más...</a><br /></td></tr>
+<tr class="separator:gab885d9bad57d89e5f53eb590dc3d6011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75438d8b3ee5d1f2aef14b0dcf221c8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#ga75438d8b3ee5d1f2aef14b0dcf221c8f">encoder_beginCount</a> (uint16_t periodMS)</td></tr>
+<tr class="memdesc:ga75438d8b3ee5d1f2aef14b0dcf221c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicia el conteo periódico de interrupciones.  <a href="#ga75438d8b3ee5d1f2aef14b0dcf221c8f">Más...</a><br /></td></tr>
+<tr class="separator:ga75438d8b3ee5d1f2aef14b0dcf221c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga440493751c4ab88e0be7426ecc557b54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#ga440493751c4ab88e0be7426ecc557b54">encoder_setTimeElapsedCallback</a> (<a class="el" href="group___encoder.html#gadba1cd5a2bb4385b66ffc75936a14c7b">callBackTimeElapsedFunction_type</a> fcnPtr)</td></tr>
+<tr class="memdesc:ga440493751c4ab88e0be7426ecc557b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registra una función para la notificación TimeElapsed.  <a href="#ga440493751c4ab88e0be7426ecc557b54">Más...</a><br /></td></tr>
+<tr class="separator:ga440493751c4ab88e0be7426ecc557b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd4851df51bb5e2e14d19274c2b204a0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#gabd4851df51bb5e2e14d19274c2b204a0">encoder_getLastCount</a> (uint8_t encoderID)</td></tr>
+<tr class="memdesc:gabd4851df51bb5e2e14d19274c2b204a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene la cantidad de interrupciones generadas por el encoder contadas durante un período.  <a href="#gabd4851df51bb5e2e14d19274c2b204a0">Más...</a><br /></td></tr>
+<tr class="separator:gabd4851df51bb5e2e14d19274c2b204a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7030f05339c89557bfa1480b60484d07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga7030f05339c89557bfa1480b60484d07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___encoder.html#ga7030f05339c89557bfa1480b60484d07">encoder_resetCount</a> (void)</td></tr>
+<tr class="memdesc:ga7030f05339c89557bfa1480b60484d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinicia el conteo actual de interrupciones para todos los encoders. <br /></td></tr>
+<tr class="separator:ga7030f05339c89557bfa1480b60484d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<p>Administra las entradas conectadas a los encoders y captura sus datos. </p>
+<p>Este módulo configura los pines conectados a los encoders como entradas y mide las interrupciones que ocurren en cada uno de ellos. Teniendo una base de tiempo, es posible traducir la cantidad de interrupciones en unidades de velocidad, útiles para el usuario.</p>
+<p>El proceso de captura de interrupciones es periódico, siendo a grandes rasgos así:</p>
+<ol type="1">
+<li>Cuenta interrupciones durante un tiempo especificado.</li>
+<li>Al transcurrir ese tiempo, notifica a quien hace uso del módulo, y le permite obtener la cantidad de interrupciones contabilizadas en el período.</li>
+<li>Luego, se reinicia la cuenta, y vuelve a comenzar el período, regresando a 1.</li>
+</ol>
+<p>Este módulo utiliza internamente una tarea llamada EncoderTask, la cual debe tener prioridad media y una alarma asociada ya que es periódica con período que varía pero su máximo está determinado por el valor máximo del contador de la alarma.</p>
+<p>El código OIL para esta tarea debe ser:</p>
+<pre class="fragment"> TASK EncoderTask {
+   PRIORITY = 10;
+   ACTIVATION = 1;
+   STACK = 1024;
+   TYPE = BASIC;
+   SCHEDULE = FULL;
+ }
+
+ ALARM ActivateEncoderTask {
+   COUNTER = SoftwareCounter;
+   ACTION = ACTIVATETASK {
+       TASK = EncoderTask;
+   }
+ }
+</pre> <h2 class="groupheader">Documentación de los 'typedefs'</h2>
+<a class="anchor" id="gadba1cd5a2bb4385b66ffc75936a14c7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* callBackTimeElapsedFunction_type) (void)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tipo de función llamada por el módulo para notificar que transcurrió un período de conteo. </p>
+<p>Este módulo llamará a la función con esta firma, que haya sido asociada con el callback, para notificar que un período de conteo ha transcurrido, siendo el período el configurado por el usuario. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones</h2>
+<a class="anchor" id="ga75438d8b3ee5d1f2aef14b0dcf221c8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encoder_beginCount </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>periodMS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicia el conteo periódico de interrupciones. </p>
+<p>Esta función hace que el módulo empiece a contar interrupciones hasta que transcurra el tiempo especificado en el parámetro. Una vez que suceda esto, el valor de la cantidad de interrupciones pasará a estar disponible mediante <code><a class="el" href="group___encoder.html#gabd4851df51bb5e2e14d19274c2b204a0" title="Obtiene la cantidad de interrupciones generadas por el encoder contadas durante un período...">encoder_getLastCount()</a></code>, y se notificará al usuario, si es que registró el callback, acerca de este suceso.</p>
+<p>Una vez finalizado el proceso anterior, la cuenta se reinicia y se repite el ciclo. Hasta que se tenga la nueva cuenta de interrupciones, la cantidad total correspondiente al período anterior seguirá siendo accesible mediante <code><a class="el" href="group___encoder.html#gabd4851df51bb5e2e14d19274c2b204a0" title="Obtiene la cantidad de interrupciones generadas por el encoder contadas durante un período...">encoder_getLastCount()</a></code>.</p>
+<p>Si anteriormente se ha llamado <code><a class="el" href="group___encoder.html#ga75438d8b3ee5d1f2aef14b0dcf221c8f" title="Inicia el conteo periódico de interrupciones. ">encoder_beginCount()</a></code>, un nuevo llamado de esta función forzará al reinicio del conteo anterior, e inmediatamente comenzará la nueva cuenta, con el nuevo período escogido.</p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">periodMS</td><td>Tiempo durante el cual se medirán interrupciones antes de notificar al usuario. El valor máximo que puede tomar depende del valor máximo del contador asociado a la alarma que activa la tarea periódica. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gabd4851df51bb5e2e14d19274c2b204a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t encoder_getLastCount </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>encoderID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obtiene la cantidad de interrupciones generadas por el encoder contadas durante un período. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderID</td><td>Identificador de encoder del cual se desea obtener la cantidad de interrupciones computadas. Si hay dos encoders, los IDs posibles serán 0 y 1. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Cantidad de interrupciones contadas en un período de tiempo para el encoder especificado. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gab885d9bad57d89e5f53eb590dc3d6011"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encoder_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configuración inicial del módulo. </p>
+<p>Antes de usar cualquier otra función de este módulo, se debe llamar a esta función.</p>
+<p>Lo que hace es configurar como entrada los pines donde están conectados los encoders, activar interrupciones para cada uno de estos pines, que son disparadas por el flanco descendente de la señal de entrada. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga440493751c4ab88e0be7426ecc557b54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void encoder_setTimeElapsedCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___encoder.html#gadba1cd5a2bb4385b66ffc75936a14c7b">callBackTimeElapsedFunction_type</a>&#160;</td>
+          <td class="paramname"><em>fcnPtr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Registra una función para la notificación TimeElapsed. </p>
+<p>La función registrada será llamada al ocurrir el evento.</p>
+<dl class="section see"><dt>Ver también</dt><dd>callbackTimeElapsedFunction_type</dd></dl>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fcnPtr</td><td>puntero a la función a llamar en caso de que ocurra tal evento. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado el Viernes, 19 de Febrero de 2016 03:17:26 para MotorControl por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>MotorControl: Fichero Fuente parser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MotorControl
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="modules.html"><span>Módulos</span></a></li>
+      <li><a href="annotated.html"><span>Estructuras&#160;de&#160;Datos</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('parser_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">parser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _PARSER_H_</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _PARSER_H_</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*==================[inclusions]=============================================*/</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;ciaaPOSIX_stdio.h&quot;</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;ciaaPOSIX_stdlib.h&quot;</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">/*==================[macros]=================================================*/</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define __PARSER_RESULTS_TYPE(name)         parser_ ## name ## _results</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define __PARSER_DATA_TYPE(name)            parser_ ## name ## _data</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#define PARSER_RESULTS_TYPE(name)           __PARSER_RESULTS_TYPE(name)</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define PARSER_DATA_TYPE(name)              __PARSER_DATA_TYPE(name)</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#ga2c6efa7679f8cd9f61af96e105017560">   38</a></span>&#160;<span class="preprocessor">#define free    ciaaPOSIX_free</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gacf143577800376dd931c059ecc61ba06">   41</a></span>&#160;<span class="preprocessor">#define malloc  ciaaPOSIX_malloc</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#ga30c75e139b07107ef1c8d3f8490aee7d">   44</a></span>&#160;<span class="preprocessor">#define memcpy  ciaaPOSIX_memcpy</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/*==================[typedef]================================================*/</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gaa3598549b86db5ebe494be46f8dbd6c5">   49</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {S0, S1, S2, S3, S4, S5} <a class="code" href="group___p_a_r_s_e_r.html#gaa3598549b86db5ebe494be46f8dbd6c5">fsmStatus</a>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a26811d73e79f9495951068446ca60c78">   53</a></span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a26811d73e79f9495951068446ca60c78">STATUS_UNINITIALIZED</a>, </div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a0c6cbb7ccfbe53672d6262ced4a78526">   54</a></span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a0c6cbb7ccfbe53672d6262ced4a78526">STATUS_INITIALIZED</a>, </div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2aa75f589adc04b3a7779c930847ec22ad">   55</a></span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2aa75f589adc04b3a7779c930847ec22ad">STATUS_INCOMPLETE</a>, </div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a330f25303cd9f75af9387e7adc52cfd0">   56</a></span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a330f25303cd9f75af9387e7adc52cfd0">STATUS_NOT_MATCHES</a>, </div><div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a6ca312e070d36eb69d621755e1a182b5">   57</a></span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a6ca312e070d36eb69d621755e1a182b5">STATUS_COMPLETE</a> </div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <a class="code" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="group___p_a_r_s_e_r.html#ga4c55c16d7c784070b26231f015e33a10">   70</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    AT_MSG_IPD = 0,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    AT_MSG_CONNECTION_OPEN,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    AT_MSG_CONNECTION_CLOSE,</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        AT_MSG_CONNECTION_FAILED,</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    USER_DUTYCYCLE,</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    LITERAL_PARSER,</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    AT_MSG_RESET,</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    USER_CARACTERIZAR,</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    PARSER_TYPES_COUNT</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <a class="code" href="group___p_a_r_s_e_r.html#ga4c55c16d7c784070b26231f015e33a10">ParserType</a>;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_parser__struct.html">Parser_struct</a> Parser;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="struct_parser_functions.html">   90</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    void            (*init)(Parser* parserPtr);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a>    (*tryMatch)(Parser* parserPtr, uint8_t newChar);</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    void            (*deinit)(Parser* parserPtr);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <a class="code" href="struct_parser_functions.html">ParserFunctions</a>;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="struct_parser__struct.html">   96</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_parser__struct.html">Parser_struct</a> {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <a class="code" href="group___p_a_r_s_e_r.html#ga4c55c16d7c784070b26231f015e33a10">ParserType</a>        type;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a>            status;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span>*                   data;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span>*                   results;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_parser_functions.html">ParserFunctions</a>*  functions;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">/*==================[inclusions]=============================================*/</span></div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#include &quot;at_cmd/ipd.h&quot;</span></div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#include &quot;at_cmd/connection_open.h&quot;</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#include &quot;at_cmd/connection_close.h&quot;</span></div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#include &quot;at_cmd/connection_failed.h&quot;</span></div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#include &quot;at_cmd/literal_parser.h&quot;</span></div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#include &quot;user_cmd/dutycycle.h&quot;</span></div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#include &quot;at_cmd/reset_detection.h&quot;</span></div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#include &quot;user_cmd/caracterizar.h&quot;</span></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">/*==================[external data declaration]==============================*/</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/*==================[external functions declaration]=========================*/</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_a_r_s_e_r.html#ga0ee68fcfbbdfdc27e085bdb572ad6c2e">parser_initModule</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">extern</span> int32_t <a class="code" href="group___p_a_r_s_e_r.html#ga999f361485083895efc727c9633c964c">parser_init</a>(Parser * parser);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">extern</span> <a class="code" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a> <a class="code" href="group___p_a_r_s_e_r.html#ga5d0895751dd23804e202be4227ba521e">parser_getStatus</a>(<span class="keyword">const</span> Parser * parser);</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="keyword">extern</span> <a class="code" href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a> <a class="code" href="group___p_a_r_s_e_r.html#gaaf04e202751f1df174160731606508d6">parser_tryMatch</a>(Parser * parser, uint8_t newChar);</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span>* <a class="code" href="group___p_a_r_s_e_r.html#ga0ec085b692d0b859ee10aedb804fae46">parser_getResults</a>(<span class="keyword">const</span> Parser * parser);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> <a class="code" href="group___p_a_r_s_e_r.html#ga10d7b36c29b348c005baf1f9154895b6">parser_deinit</a>(Parser * parser);</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _PARSER_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="group___p_a_r_s_e_r_html_gaa3598549b86db5ebe494be46f8dbd6c5"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gaa3598549b86db5ebe494be46f8dbd6c5">fsmStatus</a></div><div class="ttdeci">fsmStatus</div><div class="ttdoc">Enumerativos de estados para utilizar en una máquina de estados. </div><div class="ttdef"><b>Definition:</b> parser.h:49</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gga10d67116a82d78c948b2f3ba54947bf2a0c6cbb7ccfbe53672d6262ced4a78526"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a0c6cbb7ccfbe53672d6262ced4a78526">STATUS_INITIALIZED</a></div><div class="ttdef"><b>Definition:</b> parser.h:54</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga0ee68fcfbbdfdc27e085bdb572ad6c2e"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga0ee68fcfbbdfdc27e085bdb572ad6c2e">parser_initModule</a></div><div class="ttdeci">void parser_initModule(void)</div><div class="ttdoc">Inicializa este módulo. Llamar antes de llamar cualquier otra función. </div><div class="ttdef"><b>Definition:</b> parser.c:19</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga5d0895751dd23804e202be4227ba521e"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga5d0895751dd23804e202be4227ba521e">parser_getStatus</a></div><div class="ttdeci">ParserStatus parser_getStatus(const Parser *parser)</div><div class="ttdoc">Obtiene el estado actual del parser. </div><div class="ttdef"><b>Definition:</b> parser.c:37</div></div>
+<div class="ttc" id="struct_parser_functions_html"><div class="ttname"><a href="struct_parser_functions.html">ParserFunctions</a></div><div class="ttdoc">Funciones que todo parser debe implementar. </div><div class="ttdef"><b>Definition:</b> parser.h:90</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gga10d67116a82d78c948b2f3ba54947bf2a6ca312e070d36eb69d621755e1a182b5"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a6ca312e070d36eb69d621755e1a182b5">STATUS_COMPLETE</a></div><div class="ttdef"><b>Definition:</b> parser.h:57</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga10d7b36c29b348c005baf1f9154895b6"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga10d7b36c29b348c005baf1f9154895b6">parser_deinit</a></div><div class="ttdeci">void parser_deinit(Parser *parser)</div><div class="ttdoc">De-inicializa un parser. </div><div class="ttdef"><b>Definition:</b> parser.c:52</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gaaf04e202751f1df174160731606508d6"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gaaf04e202751f1df174160731606508d6">parser_tryMatch</a></div><div class="ttdeci">ParserStatus parser_tryMatch(Parser *parser, uint8_t newChar)</div><div class="ttdoc">Ingresa un carácter para intentar formar el patrón. </div><div class="ttdef"><b>Definition:</b> parser.c:42</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga10d67116a82d78c948b2f3ba54947bf2"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga10d67116a82d78c948b2f3ba54947bf2">ParserStatus</a></div><div class="ttdeci">ParserStatus</div><div class="ttdoc">Estados posibles de un parser. </div><div class="ttdef"><b>Definition:</b> parser.h:52</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga999f361485083895efc727c9633c964c"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga999f361485083895efc727c9633c964c">parser_init</a></div><div class="ttdeci">int32_t parser_init(Parser *parser)</div><div class="ttdoc">Inicializa el parser especificado. </div><div class="ttdef"><b>Definition:</b> parser.c:23</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gga10d67116a82d78c948b2f3ba54947bf2aa75f589adc04b3a7779c930847ec22ad"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2aa75f589adc04b3a7779c930847ec22ad">STATUS_INCOMPLETE</a></div><div class="ttdef"><b>Definition:</b> parser.h:55</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gga10d67116a82d78c948b2f3ba54947bf2a26811d73e79f9495951068446ca60c78"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a26811d73e79f9495951068446ca60c78">STATUS_UNINITIALIZED</a></div><div class="ttdef"><b>Definition:</b> parser.h:53</div></div>
+<div class="ttc" id="struct_parser__struct_html"><div class="ttname"><a href="struct_parser__struct.html">Parser_struct</a></div><div class="ttdef"><b>Definition:</b> parser.h:96</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_gga10d67116a82d78c948b2f3ba54947bf2a330f25303cd9f75af9387e7adc52cfd0"><div class="ttname"><a href="group___p_a_r_s_e_r.html#gga10d67116a82d78c948b2f3ba54947bf2a330f25303cd9f75af9387e7adc52cfd0">STATUS_NOT_MATCHES</a></div><div class="ttdef"><b>Definition:</b> parser.h:56</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga4c55c16d7c784070b26231f015e33a10"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga4c55c16d7c784070b26231f015e33a10">ParserType</a></div><div class="ttdeci">ParserType</div><div class="ttdef"><b>Definition:</b> parser.h:70</div></div>
+<div class="ttc" id="group___p_a_r_s_e_r_html_ga0ec085b692d0b859ee10aedb804fae46"><div class="ttname"><a href="group___p_a_r_s_e_r.html#ga0ec085b692d0b859ee10aedb804fae46">parser_getResults</a></div><div class="ttdeci">void * parser_getResults(const Parser *parser)</div><div class="ttdoc">Obtiene el resultado del parseo. </div><div class="ttdef"><b>Definition:</b> parser.c:47</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_a0055aa78fc431b163141caba4b96c94.html">Google Drive</a></li><li class="navelem"><a class="el" href="dir_66d9fb52d7984a5f1cc9950531bdbf3a.html">Documentar</a></li><li class="navelem"><a class="el" href="dir_d5bde04d6346cf84ad9a45c15559d2f3.html">motor_control-master</a></li><li class="navelem"><a class="el" href="dir_eccd69bb403536ee9a8742c4d6cec7e4.html">inc</a></li><li class="navelem"><b>parser.h</b></li>
+    <li class="footer">Generado el Viernes, 19 de Febrero de 2016 03:17:26 para MotorControl por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
